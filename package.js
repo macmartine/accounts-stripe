@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Login service for Stripe accounts",
   version: "1.0.0",
-  name: "99miles:accounts-stripe"
+  name: "macmartine:accounts-stripe"
 });
 
 Package.onUse(function(api) {
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   // Export Accounts (etc) to packages using this one.
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
-  api.use('99miles:stripe@1.0.0', ['client', 'server']);
+  api.use('macmartine:stripe@1.0.0', ['client', 'server']);
 
   api.addFiles('stripe_login_button.css', 'client');
   api.addFiles("stripe.js");
